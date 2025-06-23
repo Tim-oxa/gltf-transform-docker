@@ -1,7 +1,7 @@
-FROM node:20-alpine
+FROM node:22-alpine
 
 WORKDIR /app
 
-RUN npm install -g @gltf-transform/cli@4.1.3
+RUN npm install -g @gltf-transform/cli@4.2.0
 
 ENTRYPOINT ["gltf-transform"]
